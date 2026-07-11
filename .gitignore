@@ -1,0 +1,6 @@
+.env
+credentials.json
+token.json
+processed_rows.json
+reports/
+fonts/
