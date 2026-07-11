@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════════
+#  .env  –  Vedic Astrology Automation Configuration
+#  Copy this file to .env and fill in all values.
+#  NEVER commit this file to git (add .env to .gitignore)
+# ══════════════════════════════════════════════════════════════════
+
+# ── Anthropic ─────────────────────────────────────────────────────
+GEMINI_API_KEY=***************************************************
+
+# ── Google Sheets (linked to your Google Form) ────────────────────
+# The Spreadsheet ID is in the URL of your Google Sheet:
+#   https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/edit
+SPREADSHEET_ID=1wJ3RV_3r1pHtHdD5zdM6ZSO4mmmRyRnZ233I8Vh3O2k
+
+# The name of the sheet tab (default for Form responses)
+SHEET_NAME=Form responses 1
+
+# ── Email (Gmail SMTP) ────────────────────────────────────────────
+# Use a Gmail App Password (not your normal password).
+# Enable it at: https://myaccount.google.com/apppasswords
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+EMAIL_SENDER=astraveda474@gmail.com
+EMAIL_PASSWORD=gsgjlpythcjbqpkt
+
+# ── WhatsApp Provider ─────────────────────────────────────────────
+# Choose: "callmebot" (free, text only) or "twilio" (paid, supports media)
+WHATSAPP_PROVIDER=callmebot
+
+# ── CallMeBot (if WHATSAPP_PROVIDER=callmebot) ────────────────────
+# Setup: https://www.callmebot.com/blog/free-api-whatsapp-messages/
+# Each phone number needs its own API key (one-time WhatsApp setup)
+CALLMEBOT_API_KEY=YOUR_CALLMEBOT_API_KEY
+
+# ── Twilio (if WHATSAPP_PROVIDER=twilio) ─────────────────────────
+# Docs: https://www.twilio.com/docs/whatsapp
+TWILIO_ACCOUNT_SID=ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_WHATSAPP_NUM=whatsapp:+14155238886
+
+# ── Output ────────────────────────────────────────────────────────
+OUTPUT_DIR=reports
+PROCESSED_LOG=processed_rows.json
